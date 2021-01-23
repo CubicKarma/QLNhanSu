@@ -10,23 +10,18 @@ using System.Windows.Forms;
 
 namespace QLNhanSu
 {
-    public partial class DangNhap : Form
+    public partial class ManHinhChinh : Form
     {
-        public DangNhap()
+        public ManHinhChinh()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDangnhap_Click(object sender, EventArgs e)
+        private void btnNhanVien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ManHinhChinh manHinhChinh = new ManHinhChinh();
-            manHinhChinh.ShowDialog();
+            QuanLyNhanVien quanLyNhanVien = new QuanLyNhanVien();
+            quanLyNhanVien.ShowDialog();
         }
     }
 }
