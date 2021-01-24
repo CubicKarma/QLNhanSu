@@ -19,7 +19,7 @@ namespace QLNhanSu
         SqlDataAdapter adapter = new SqlDataAdapter();
 
         //Datasourse (khac nhau)
-        string str = "Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
 
         DataTable table = new DataTable();
 
@@ -41,7 +41,7 @@ namespace QLNhanSu
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
+            connection = new SqlConnection(dataSource);
             connection.Open();
             loadData();
         }

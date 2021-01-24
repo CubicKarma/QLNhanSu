@@ -59,6 +59,7 @@ namespace QLNhanSu
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(149, 20);
             this.txtPassword.TabIndex = 9;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
