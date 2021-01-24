@@ -23,5 +23,12 @@ namespace QLNhanSu
             QuanLyNhanVien quanLyNhanVien = new QuanLyNhanVien();
             quanLyNhanVien.ShowDialog();
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangNhap dangNhap = new DangNhap();
+            dangNhap.ShowDialog();
+        }
     }
 }

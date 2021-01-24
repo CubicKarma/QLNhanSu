@@ -14,6 +14,7 @@ namespace QLNhanSu
 {
     public partial class DangNhap : Form
     {
+        //Data source(khac nhau)
         string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
 
         public DangNhap()
@@ -54,10 +55,15 @@ namespace QLNhanSu
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Loi ket noi");
+                MessageBox.Show("Lỗi kết nối");
             }
+        }
 
-            
+        private void btnDangKy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangKy dangKy = new DangKy();
+            dangKy.ShowDialog();
         }
     }
 }

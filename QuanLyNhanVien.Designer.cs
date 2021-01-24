@@ -52,7 +52,7 @@ namespace QLNhanSu
             this.lblDiachi = new System.Windows.Forms.Label();
             this.lblTieude = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dtpNgaysinh = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -287,22 +287,23 @@ namespace QLNhanSu
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(636, 214);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // dtpNgaysinh
+            // dtpNgaySinh
             // 
-            this.dtpNgaysinh.CustomFormat = "dd-MM-yyyy";
-            this.dtpNgaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dtpNgaysinh.Location = new System.Drawing.Point(238, 140);
-            this.dtpNgaysinh.Name = "dtpNgaysinh";
-            this.dtpNgaysinh.Size = new System.Drawing.Size(151, 24);
-            this.dtpNgaysinh.TabIndex = 46;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(238, 140);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(151, 24);
+            this.dtpNgaySinh.TabIndex = 46;
             // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 492);
-            this.Controls.Add(this.dtpNgaysinh);
+            this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExportExcel);
             this.Controls.Add(this.btnreset);
@@ -326,6 +327,7 @@ namespace QLNhanSu
             this.Controls.Add(this.lblDiachi);
             this.Controls.Add(this.lblTieude);
             this.Name = "QuanLyNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyNhanVien";
             this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -358,6 +360,6 @@ namespace QLNhanSu
         private System.Windows.Forms.Label lblDiachi;
         private System.Windows.Forms.Label lblTieude;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dtpNgaysinh;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
     }
 }

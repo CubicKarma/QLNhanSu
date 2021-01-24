@@ -36,6 +36,7 @@ namespace QLNhanSu
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDangnhap = new System.Windows.Forms.Button();
+            this.btnDangKy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +96,7 @@ namespace QLNhanSu
             // btnDangnhap
             // 
             this.btnDangnhap.BackColor = System.Drawing.Color.Transparent;
-            this.btnDangnhap.Location = new System.Drawing.Point(150, 246);
+            this.btnDangnhap.Location = new System.Drawing.Point(80, 245);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(105, 36);
             this.btnDangnhap.TabIndex = 10;
@@ -103,12 +104,24 @@ namespace QLNhanSu
             this.btnDangnhap.UseVisualStyleBackColor = false;
             this.btnDangnhap.Click += new System.EventHandler(this.btnDangnhap_Click);
             // 
+            // btnDangKy
+            // 
+            this.btnDangKy.BackColor = System.Drawing.Color.Transparent;
+            this.btnDangKy.Location = new System.Drawing.Point(222, 245);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(105, 36);
+            this.btnDangKy.TabIndex = 11;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.UseVisualStyleBackColor = false;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
+            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(400, 397);
+            this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
@@ -116,6 +129,7 @@ namespace QLNhanSu
             this.Controls.Add(this.btnDangnhap);
             this.Controls.Add(this.label1);
             this.Name = "DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -130,6 +144,7 @@ namespace QLNhanSu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDangnhap;
+        private System.Windows.Forms.Button btnDangKy;
     }
 }
 

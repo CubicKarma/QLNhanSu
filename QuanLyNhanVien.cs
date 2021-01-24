@@ -65,5 +65,18 @@ namespace QLNhanSu
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dataGridView1.CurrentRow.Index;
+            txtMaNv.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
+            txtTenNv.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            dtpNgaySinh.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+            txtDiachi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
+            txtLuong.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
+            cbxPhongban.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
+            cbxDuan.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
+        }
     }
 }
