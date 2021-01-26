@@ -87,6 +87,11 @@ namespace QLNhanSu
             this.cbxDuan.DisplayMember = "name_Da";
             this.cbxDuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbxDuan.FormattingEnabled = true;
+            this.cbxDuan.Items.AddRange(new object[] {
+            "da1",
+            "da2",
+            "da3",
+            "da4"});
             this.cbxDuan.Location = new System.Drawing.Point(530, 173);
             this.cbxDuan.Name = "cbxDuan";
             this.cbxDuan.Size = new System.Drawing.Size(149, 26);
@@ -98,6 +103,11 @@ namespace QLNhanSu
             this.cbxPhongban.DisplayMember = "name_Pb";
             this.cbxPhongban.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbxPhongban.FormattingEnabled = true;
+            this.cbxPhongban.Items.AddRange(new object[] {
+            "pb1",
+            "pb2",
+            "pb3",
+            "pb4"});
             this.cbxPhongban.Location = new System.Drawing.Point(530, 140);
             this.cbxPhongban.Name = "cbxPhongban";
             this.cbxPhongban.Size = new System.Drawing.Size(149, 26);
