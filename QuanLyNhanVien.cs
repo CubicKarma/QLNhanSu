@@ -42,6 +42,7 @@ namespace QLNhanSu
 
         private void UpdateDA()
         {
+            cbxDuan.Items.Clear();
             command.CommandText = "SELECT * FROM DUAN";
             sqlReader = command.ExecuteReader();
             while (sqlReader.Read())
@@ -53,6 +54,7 @@ namespace QLNhanSu
 
         private void UpdatePB()
         {
+            cbxPhongban.Items.Clear();
             command.CommandText = "SELECT * FROM PHONGBAN";
             sqlReader = command.ExecuteReader();
             while (sqlReader.Read())
