@@ -14,9 +14,6 @@ namespace QLNhanSu
 {
     public partial class DangNhap : Form
     {
-        //Data source(khac nhau)
-        string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
-
         public DangNhap()
         {
             InitializeComponent();
@@ -29,7 +26,7 @@ namespace QLNhanSu
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(dataSource);
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
 
             try
             {

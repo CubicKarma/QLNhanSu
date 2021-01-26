@@ -11,3 +11,17 @@ D:\Studying\ThucTapNhom\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.pdb
 D:\Studying\ThucTapNhom\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.DangKy.resources
 D:\Studying\ThucTapNhom\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.ManHinhChinh.resources
 D:\Studying\ThucTapNhom\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.QuanLyNhanVien.resources
+D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.exe.config
+D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.exe
+D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.pdb
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csprojAssemblyReference.cache
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.DangKy.resources
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.DangNhap.resources
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.ManHinhChinh.resources
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.Properties.Resources.resources
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.QuanLyNhanVien.resources
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csproj.GenerateResource.cache
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.exe
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.pdb
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.Helper.Helper.resources

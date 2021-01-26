@@ -16,10 +16,10 @@ namespace QLNhanSu
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
+        SqlDataReader sqlReader;
         SqlDataAdapter adapter = new SqlDataAdapter();
 
         //Datasourse (khac nhau)
-        string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
 
         DataTable table = new DataTable();
 
@@ -32,6 +32,34 @@ namespace QLNhanSu
             table.Clear();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+
+            //Thêm phòng ban vào cbx
+            UpdatePB();
+
+            //Thêm dự án vào cbx
+            UpdateDA();
+        }
+
+        private void UpdateDA()
+        {
+            command.CommandText = "SELECT * FROM DUAN";
+            sqlReader = command.ExecuteReader();
+            while (sqlReader.Read())
+            {
+                cbxDuan.Items.Add(sqlReader["id_Da"].ToString());
+            }
+            sqlReader.Close();
+        }
+
+        private void UpdatePB()
+        {
+            command.CommandText = "SELECT * FROM PHONGBAN";
+            sqlReader = command.ExecuteReader();
+            while (sqlReader.Read())
+            {
+                cbxPhongban.Items.Add(sqlReader["id_Pb"].ToString());
+            }
+            sqlReader.Close();
         }
 
         public QuanLyNhanVien()
@@ -41,7 +69,7 @@ namespace QLNhanSu
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(dataSource);
+            connection = new SqlConnection(Helper.Define.dataSource);
             connection.Open();
             loadData();
         }
