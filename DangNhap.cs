@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace QLNhanSu
 {
     public partial class DangNhap : Form
     {
+       
         public DangNhap()
         {
             InitializeComponent();
@@ -50,7 +50,8 @@ namespace QLNhanSu
                     MessageBox.Show("Đăng nhập thất bại!");
                 }
             }
-            catch(Exception ex)
+            catch(Exception 
+            )
             {
                 MessageBox.Show("Lỗi kết nối");
             }

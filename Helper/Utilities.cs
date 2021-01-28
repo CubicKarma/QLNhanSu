@@ -35,6 +35,6 @@ namespace QLNhanSu.Helper
         public const string deleteHelper = "\\Image\\delete.png";
         public const string searchHelper = "\\Image\\search.png";
         //Datasourse (khac nhau)
-        public const string dataSource = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+        public const string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
     }
 }

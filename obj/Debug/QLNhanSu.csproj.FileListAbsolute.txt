@@ -25,3 +25,17 @@ D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.exe
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.pdb
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.Helper.Helper.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.DangKy.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.DangNhap.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.Helper.Helper.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.ManHinhChinh.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.QuanLyNhanVien.resources
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.exe
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanSu.pdb
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.exe
+C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.pdb

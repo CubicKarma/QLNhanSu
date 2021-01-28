@@ -98,6 +98,7 @@ namespace QLNhanSu
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtMaNv.ReadOnly = true;
             int i;
             i = dataGridView1.CurrentRow.Index;
             txtMaNv.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
@@ -107,6 +108,14 @@ namespace QLNhanSu
             txtLuong.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
             cbxPhongban.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
             cbxDuan.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "delete from NHANVIEN where id_Nv='" + txtMaNv.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
         }
     }
 }

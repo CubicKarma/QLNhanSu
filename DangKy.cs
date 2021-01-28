@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data;
+
 
 namespace QLNhanSu
 {
     public partial class DangKy : Form
     {
         //Data source(khac nhau)
-        string dataSource = @"Data Source=DESKTOP-152SFQ3;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+        string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
         SqlConnection connection;
         SqlCommand command;
         public DangKy()
@@ -43,7 +43,7 @@ namespace QLNhanSu
                 DangNhap dangNhap = new DangNhap();
                 dangNhap.ShowDialog();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Lỗi kết nối");
             }
