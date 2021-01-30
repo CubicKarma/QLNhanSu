@@ -14,6 +14,13 @@ namespace QLNhanSu.Helper
         static Color activeButtonBackColor = Color.RoyalBlue;
         static Color baseButtonForeColor = Color.Black;
         static Color activeButtonForeColor = Color.White;
+        public static DangNhap GetMainForm()
+        {
+            foreach (Form form in Application.OpenForms)
+                if (form is DangNhap)
+                    return (DangNhap)form;
+            return null;
+        }
         public static void setButtonState(bool bIsActive, ref Button btn)
         {
             if(bIsActive)
@@ -35,6 +42,7 @@ namespace QLNhanSu.Helper
         public const string deleteHelper = "\\Image\\delete.png";
         public const string searchHelper = "\\Image\\search.png";
         //Datasourse (khac nhau)
-        public const string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+        //DN: ADMIN\SQLEXPRESS
+        public const string dataSource = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
     }
 }

@@ -26,9 +26,11 @@ namespace QLNhanSu
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DangNhap dangNhap = new DangNhap();
-            dangNhap.ShowDialog();
+            this.Close();            
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Helper.Utilities.GetMainForm().Show();
         }
     }
 }

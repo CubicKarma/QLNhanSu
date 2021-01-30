@@ -14,7 +14,6 @@ D:\Studying\ThucTapNhom\QLNhanSu\QLNhanSu\obj\Debug\QLNhanSu.QuanLyNhanVien.reso
 D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.exe.config
 D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.exe
 D:\ThucTapNhom\QLNhanSu\bin\Debug\QLNhanSu.pdb
-D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csprojAssemblyReference.cache
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.DangKy.resources
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.DangNhap.resources
 D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.ManHinhChinh.resources
@@ -39,3 +38,4 @@ C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\obj\Debug\QLNhanS
 C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.exe.config
 C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.exe
 C:\Users\Admin\OneDrive\Máy tính\Thực Tập nhóm\QLNhanSu\bin\Debug\QLNhanSu.pdb
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.Helper.HelpPictureBox.resources

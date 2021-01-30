@@ -16,6 +16,8 @@ namespace QLNhanSu.Helper
         public Helper()
         {
             InitializeComponent();
+            btnClick(addHelpBTN);
+            helpBox.setImage(Define.addHelper);
         }
         void btnClick(Button btn)
         {
@@ -30,34 +32,29 @@ namespace QLNhanSu.Helper
             Utilities.setButtonState(false, ref CurrentButton);
             CurrentButton = btn;
             Utilities.setButtonState(true, ref CurrentButton);
-        }
-        void setImage(string filename)
-        {
-            helpImage.Image = Image.FromFile(Application.StartupPath+filename);
-            helpImage.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
+        }     
         private void addHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            setImage(Define.addHelper);
+            helpBox.setImage(Define.addHelper);
         }
 
         private void editHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            setImage(Define.editHelper);
+            helpBox.setImage(Define.editHelper);
         }
 
         private void deleteHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            setImage(Define.deleteHelper);
+            helpBox.setImage(Define.deleteHelper);
         }
 
         private void searchHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            setImage(Define.searchHelper);
+            helpBox.setImage(Define.searchHelper);
         }
     }
 }

@@ -117,5 +117,11 @@ namespace QLNhanSu
             command.ExecuteNonQuery();
             loadData();
         }
+        //gọi sự kiện đóng form
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            //Chuyển về form đăng nhập rồi mới tắt form để app đc terminate
+            Helper.Utilities.GetMainForm().Show();
+        }
     }
 }

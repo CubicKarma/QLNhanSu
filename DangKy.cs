@@ -14,8 +14,6 @@ namespace QLNhanSu
 {
     public partial class DangKy : Form
     {
-        //Data source(khac nhau)
-        string dataSource = @"Data Source=DESKTOP-C33GCG4;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
         SqlConnection connection;
         SqlCommand command;
         public DangKy()
@@ -24,7 +22,7 @@ namespace QLNhanSu
         }
         private void DangKy_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(dataSource);
+            connection = new SqlConnection(Helper.Define.dataSource);
             connection.Open();
         }
 
@@ -36,24 +34,25 @@ namespace QLNhanSu
                 command = connection.CreateCommand();
                 string taiKhoan = txtTaikhoan.Text;
                 string matKhau = txtMatkhau.Text;
-                command.CommandText = "INSERT INTO DANGNHAP (TaiKhoan, MatKhau) VALUES ('" + taiKhoan + "', '" + matKhau + "')";
+                command.CommandText = "INSERT INTO DANGNHAP (username, password) VALUES ('" + taiKhoan + "', '" + matKhau + "')";
                 command.ExecuteNonQuery();
 
-                this.Hide();
-                DangNhap dangNhap = new DangNhap();
-                dangNhap.ShowDialog();
+                this.Close();
+                Helper.Utilities.GetMainForm().Show();
             }
-            catch (Exception )
+            catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối");
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DangNhap dangNhap = new DangNhap();
-            dangNhap.ShowDialog();
+            this.Close();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Helper.Utilities.GetMainForm().Show();
         }
 
     }
