@@ -128,7 +128,7 @@ namespace QLNhanSu
         private void btnThem_Click_1(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
-            //string id = "nv" + (dataGridView1.Rows.Count + 1).ToString();
+            
             string id = txtMaNv.Text;
             connection.Open();
 
