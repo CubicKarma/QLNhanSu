@@ -62,5 +62,10 @@ namespace QLNhanSu
             DangKy dangKy = new DangKy();
             dangKy.ShowDialog();
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

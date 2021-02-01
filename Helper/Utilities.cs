@@ -43,6 +43,6 @@ namespace QLNhanSu.Helper
         public const string searchHelper = "\\Image\\search.png";
         //Datasourse (khac nhau)
         //DN: ADMIN\SQLEXPRESS
-        public const string dataSource = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
+        public const string dataSource = @"Data Source=NAM\SQLEXPRESS;Initial Catalog=Quanlynhasu_3F;Integrated Security=True";
     }
 }

@@ -98,7 +98,7 @@ namespace QLNhanSu
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaNv.ReadOnly = true;
+            //txtMaNv.ReadOnly = true;
             int i;
             i = dataGridView1.CurrentRow.Index;
             txtMaNv.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
@@ -109,34 +109,7 @@ namespace QLNhanSu
             cbxPhongban.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
             cbxDuan.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
-            //string id = "nv" + (dataGridView1.Rows.Count + 1).ToString();
-            string id = txtMaNv.Text;
-            connection.Open();
-
-         
-            string sql = "select * from NHANVIEN where id_Nv = '" + txtMaNv.Text + "'";
-
-            SqlCommand cmd = new SqlCommand(sql, connection);
-
-            SqlDataReader dta = cmd.ExecuteReader();
-            if (dta.Read() == true)
-            {
-                
-                MessageBox.Show(" Trùng Mã Nhân Viên! Mời Nhập lại");
-            }
-            else
-            {
-                dta.Close();
-                command = connection.CreateCommand();
-                command.CommandText = "Insert into NHANVIEN values('" + txtMaNv.Text + "', N'" + txtTenNv.Text + "','" + dtpNgaySinh.Text + "', N'" + txtDiachi.Text + "' , '" + txtLuong.Text + "' , '" + cbxPhongban.Text + "' , '" + cbxDuan.Text + "')";
-                command.ExecuteNonQuery();
-                loadData();
-            }
-
-        }
+       
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -150,6 +123,53 @@ namespace QLNhanSu
         {
             //Chuyển về form đăng nhập rồi mới tắt form để app đc terminate
             Helper.Utilities.GetMainForm().Show();
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            //string id = "nv" + (dataGridView1.Rows.Count + 1).ToString();
+            string id = txtMaNv.Text;
+            connection.Open();
+
+            string sql = "select * from NHANVIEN where id_Nv = '" + txtMaNv.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+
+                MessageBox.Show(" Trùng Mã Nhân Viên! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into NHANVIEN values('" + txtMaNv.Text + "', N'" + txtTenNv.Text + "','" + dtpNgaySinh.Text + "', N'" + txtDiachi.Text + "' , '" + txtLuong.Text + "' , '" + cbxPhongban.Text + "' , '" + cbxDuan.Text + "')";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            txtMaNv.Text = "";
+            txtTenNv.Text = "";
+            dtpNgaySinh.Text = "1/1/1900";
+            txtDiachi.Text = "";
+            txtLuong.Text = "";
+            cbxPhongban.Text = "";
+            cbxDuan.Text = "";
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            txtMaNv.ReadOnly = true;
+            command = connection.CreateCommand();
+            command.CommandText = "update NHANVIEN set name_Nv = N'" + txtTenNv.Text + "', ngaysinh_Nv = '" + dtpNgaySinh.Text + "', diachi_Nv = N'" + txtDiachi.Text + "' , luong_Nv = '" + txtLuong.Text + "', id_Pb = '" + cbxPhongban.Text + "' , id_Da= '" + cbxDuan.Text + "' where id_Nv = '" + txtMaNv.Text + "'";
+            command.ExecuteNonQuery();
+            loadData();
         }
     }
 }
