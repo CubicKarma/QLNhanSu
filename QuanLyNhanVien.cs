@@ -109,6 +109,34 @@ namespace QLNhanSu
             cbxPhongban.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
             cbxDuan.Text = dataGridView1.Rows[i].Cells[6].Value.ToString();
         }
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            //string id = "nv" + (dataGridView1.Rows.Count + 1).ToString();
+            string id = txtMaNv.Text;
+            connection.Open();
+
+         
+            string sql = "select * from NHANVIEN where id_Nv = '" + txtMaNv.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlDataReader dta = cmd.ExecuteReader();
+            if (dta.Read() == true)
+            {
+                
+                MessageBox.Show(" Trùng Mã Nhân Viên! Mời Nhập lại");
+            }
+            else
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "Insert into NHANVIEN values('" + txtMaNv.Text + "', N'" + txtTenNv.Text + "','" + dtpNgaySinh.Text + "', N'" + txtDiachi.Text + "' , '" + txtLuong.Text + "' , '" + cbxPhongban.Text + "' , '" + cbxDuan.Text + "')";
+                command.ExecuteNonQuery();
+                loadData();
+            }
+
+        }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
