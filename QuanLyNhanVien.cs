@@ -98,7 +98,7 @@ namespace QLNhanSu
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //txtMaNv.ReadOnly = true;
+           
             int i;
             i = dataGridView1.CurrentRow.Index;
             txtMaNv.Text = dataGridView1.Rows[i].Cells[0].Value.ToString();
