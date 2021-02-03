@@ -53,6 +53,7 @@ namespace QLNhanSu
             this.lblTieude = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.helpBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -313,11 +314,26 @@ namespace QLNhanSu
             this.dtpNgaySinh.Size = new System.Drawing.Size(151, 24);
             this.dtpNgaySinh.TabIndex = 46;
             // 
+            // helpBTN
+            // 
+            this.helpBTN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.helpBTN.BackColor = System.Drawing.Color.Transparent;
+            this.helpBTN.FlatAppearance.BorderSize = 0;
+            this.helpBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.helpBTN.Image = ((System.Drawing.Image)(resources.GetObject("helpBTN.Image")));
+            this.helpBTN.Location = new System.Drawing.Point(12, 448);
+            this.helpBTN.Name = "helpBTN";
+            this.helpBTN.Size = new System.Drawing.Size(32, 32);
+            this.helpBTN.TabIndex = 48;
+            this.helpBTN.UseVisualStyleBackColor = false;
+            this.helpBTN.Click += new System.EventHandler(this.helpBTN_Click);
+            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.helpBTN);
             this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExportExcel);
@@ -376,5 +392,6 @@ namespace QLNhanSu
         private System.Windows.Forms.Label lblTieude;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Button helpBTN;
     }
 }

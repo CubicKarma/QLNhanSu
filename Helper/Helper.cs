@@ -17,7 +17,7 @@ namespace QLNhanSu.Helper
         {
             InitializeComponent();
             btnClick(addHelpBTN);
-            helpBox.setImage(Define.addHelper);
+            helpBox.updateInformation(IMAGESTATE.ADDHELPER);
         }
         void btnClick(Button btn)
         {
@@ -36,25 +36,25 @@ namespace QLNhanSu.Helper
         private void addHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.setImage(Define.addHelper);
+            helpBox.updateInformation(IMAGESTATE.ADDHELPER);
         }
 
         private void editHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.setImage(Define.editHelper);
+            helpBox.updateInformation(IMAGESTATE.EDITHELPER);
         }
 
         private void deleteHelpBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.setImage(Define.deleteHelper);
+            helpBox.updateInformation(IMAGESTATE.DELETEHELPER);
         }
 
         private void searchHelperBTN_Click(object sender, EventArgs e)
         {
             btnClick((Button)sender);
-            helpBox.setImage(Define.searchHelper);
+            helpBox.updateInformation(IMAGESTATE.SEARCHHELPER);
         }
     }
 }

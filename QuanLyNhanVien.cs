@@ -13,6 +13,8 @@ namespace QLNhanSu
 {
     public partial class QuanLyNhanVien : Form
     {
+        //Help ref
+        Form helpf;
         //Ket noi SQL
         SqlConnection connection;
         SqlCommand command;
@@ -26,6 +28,10 @@ namespace QLNhanSu
         //demo datagridview trong form QuanLyNhanvien.cs
         void loadData()
         {
+            //Thiet lap input listener
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Form_KeyDown);
+
             command = connection.CreateCommand();
             command.CommandText = "select * from NHANVIEN";
             adapter.SelectCommand = command;
@@ -170,6 +176,30 @@ namespace QLNhanSu
             command.CommandText = "update NHANVIEN set name_Nv = N'" + txtTenNv.Text + "', ngaysinh_Nv = '" + dtpNgaySinh.Text + "', diachi_Nv = N'" + txtDiachi.Text + "' , luong_Nv = '" + txtLuong.Text + "', id_Pb = '" + cbxPhongban.Text + "' , id_Da= '" + cbxDuan.Text + "' where id_Nv = '" + txtMaNv.Text + "'";
             command.ExecuteNonQuery();
             loadData();
+        }
+
+        //input listener
+        void Form_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                CreateHelpForm();
+            }
+        }
+
+        private void CreateHelpForm()
+        {
+            if (helpf == null)
+            {
+                Helper.Helper helper = new Helper.Helper();
+                helper.ShowDialog();
+                helpf = helper;
+            }
+        }
+
+        private void helpBTN_Click(object sender, EventArgs e)
+        {
+            CreateHelpForm();
         }
     }
 }

@@ -54,3 +54,4 @@ C:\Users\84982\OneDrive\Desktop\adjkas\QLNhanSu\obj\Debug\QLNhanSu.csproj.Genera
 C:\Users\84982\OneDrive\Desktop\adjkas\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
 C:\Users\84982\OneDrive\Desktop\adjkas\QLNhanSu\obj\Debug\QLNhanSu.exe
 C:\Users\84982\OneDrive\Desktop\adjkas\QLNhanSu\obj\Debug\QLNhanSu.pdb
+D:\ThucTapNhom\QLNhanSu\obj\Debug\QLNhanSu.csprojAssemblyReference.cache

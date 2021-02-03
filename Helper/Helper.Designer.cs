@@ -49,7 +49,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 57);
+            this.panel1.Size = new System.Drawing.Size(808, 57);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -59,7 +59,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 57);
+            this.label1.Size = new System.Drawing.Size(808, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hướng dẫn sử dụng phần mềm QLNS";
             // 
@@ -71,15 +71,16 @@
             this.panel2.Controls.Add(this.addHelpBTN);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(648, 57);
+            this.panel2.Location = new System.Drawing.Point(656, 57);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(152, 393);
+            this.panel2.Size = new System.Drawing.Size(152, 438);
             this.panel2.TabIndex = 1;
             // 
             // searchHelperBTN
             // 
             this.searchHelperBTN.BackColor = System.Drawing.SystemColors.Control;
             this.searchHelperBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchHelperBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchHelperBTN.Location = new System.Drawing.Point(0, 191);
             this.searchHelperBTN.Name = "searchHelperBTN";
             this.searchHelperBTN.Size = new System.Drawing.Size(152, 46);
@@ -92,6 +93,7 @@
             // 
             this.deleteHelpBTN.BackColor = System.Drawing.SystemColors.Control;
             this.deleteHelpBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.deleteHelpBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteHelpBTN.Location = new System.Drawing.Point(0, 145);
             this.deleteHelpBTN.Name = "deleteHelpBTN";
             this.deleteHelpBTN.Size = new System.Drawing.Size(152, 46);
@@ -104,6 +106,7 @@
             // 
             this.editHelpBTN.BackColor = System.Drawing.SystemColors.Control;
             this.editHelpBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editHelpBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editHelpBTN.Location = new System.Drawing.Point(0, 99);
             this.editHelpBTN.Name = "editHelpBTN";
             this.editHelpBTN.Size = new System.Drawing.Size(152, 46);
@@ -116,6 +119,7 @@
             // 
             this.addHelpBTN.BackColor = System.Drawing.SystemColors.Control;
             this.addHelpBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addHelpBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addHelpBTN.Location = new System.Drawing.Point(0, 53);
             this.addHelpBTN.Name = "addHelpBTN";
             this.addHelpBTN.Size = new System.Drawing.Size(152, 46);
@@ -138,7 +142,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 57);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(648, 393);
+            this.panel4.Size = new System.Drawing.Size(656, 438);
             this.panel4.TabIndex = 2;
             // 
             // helpBox
@@ -146,14 +150,14 @@
             this.helpBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpBox.Location = new System.Drawing.Point(0, 0);
             this.helpBox.Name = "helpBox";
-            this.helpBox.Size = new System.Drawing.Size(648, 393);
+            this.helpBox.Size = new System.Drawing.Size(656, 438);
             this.helpBox.TabIndex = 0;
             // 
             // Helper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(808, 495);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
