@@ -177,6 +177,31 @@ namespace QLNhanSu
             command.ExecuteNonQuery();
             loadData();
         }
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Helper.Define.dataSource);
+            connection.Open();
+            string maNhanVien = txtSearch.Text;
+            string sql = "select id_NV from NHANVIEN where id_NV = '" + txtSearch.Text + "'";
+
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader dta = cmd.ExecuteReader();
+
+            if (dta.Read() == true)
+            {
+                dta.Close();
+                command = connection.CreateCommand();
+                command.CommandText = "select * from NHANVIEN where id_Nv='" + txtSearch.Text + "'";
+                adapter.SelectCommand = command;
+                table.Clear();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            else
+            {
+                MessageBox.Show("Không có mã nhân viên cần tìm!");
+            }
+        }
 
         //input listener
         void Form_KeyDown(object sender, KeyEventArgs e)
