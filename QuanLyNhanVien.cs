@@ -171,7 +171,7 @@ namespace QLNhanSu
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            txtMaNv.ReadOnly = true;
+            //txtMaNv.ReadOnly = true;
             command = connection.CreateCommand();
             command.CommandText = "update NHANVIEN set name_Nv = N'" + txtTenNv.Text + "', ngaysinh_Nv = '" + dtpNgaySinh.Text + "', diachi_Nv = N'" + txtDiachi.Text + "' , luong_Nv = '" + txtLuong.Text + "', id_Pb = '" + cbxPhongban.Text + "' , id_Da= '" + cbxDuan.Text + "' where id_Nv = '" + txtMaNv.Text + "'";
             command.ExecuteNonQuery();
@@ -225,6 +225,16 @@ namespace QLNhanSu
         private void helpBTN_Click(object sender, EventArgs e)
         {
             CreateHelpForm();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            command = connection.CreateCommand();
+            command.CommandText = "select * from NHANVIEN";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
         }
     }
 }

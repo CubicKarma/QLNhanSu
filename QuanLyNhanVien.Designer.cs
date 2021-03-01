@@ -30,7 +30,7 @@ namespace QLNhanSu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanVien));
-            this.btnExportExcel = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.btnreset = new System.Windows.Forms.Button();
             this.cbxDuan = new System.Windows.Forms.ComboBox();
             this.cbxPhongban = new System.Windows.Forms.ComboBox();
@@ -57,18 +57,19 @@ namespace QLNhanSu
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnExportExcel
+            // btnExport
             // 
-            this.btnExportExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportExcel.Image")));
-            this.btnExportExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExportExcel.Location = new System.Drawing.Point(564, 219);
-            this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(75, 31);
-            this.btnExportExcel.TabIndex = 43;
-            this.btnExportExcel.Text = "Xuất ";
-            this.btnExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportExcel.UseVisualStyleBackColor = true;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
+            this.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExport.Location = new System.Drawing.Point(564, 219);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(75, 31);
+            this.btnExport.TabIndex = 43;
+            this.btnExport.Text = "Xuất ";
+            this.btnExport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnreset
             // 
@@ -212,6 +213,7 @@ namespace QLNhanSu
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // lblMaDa
             // 
@@ -336,7 +338,7 @@ namespace QLNhanSu
             this.Controls.Add(this.helpBTN);
             this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnExportExcel);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnreset);
             this.Controls.Add(this.cbxDuan);
             this.Controls.Add(this.cbxPhongban);
@@ -369,7 +371,7 @@ namespace QLNhanSu
 
         #endregion
 
-        private System.Windows.Forms.Button btnExportExcel;
+        private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Button btnreset;
         private System.Windows.Forms.ComboBox cbxDuan;
         private System.Windows.Forms.ComboBox cbxPhongban;
