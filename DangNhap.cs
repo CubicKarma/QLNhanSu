@@ -34,7 +34,7 @@ namespace QLNhanSu
 
                 string taiKhoan = txtUsername.Text;
                 string matKhau = txtPassword.Text;
-                string sql = "select * from DANGNHAP where TaiKhoan = '" + taiKhoan+ "' and MatKhau = '" + matKhau+"'";
+                string sql = "select * from DANGNHAP where [username] = '" + taiKhoan+ "' and [password] = '" + matKhau+"'";
 
                 SqlCommand cmd = new SqlCommand(sql, connection);
 

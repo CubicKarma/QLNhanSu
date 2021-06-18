@@ -70,3 +70,18 @@ C:\Users\Van Ha Lite\OneDrive\Máy tính\QLNhanSu\obj\Debug\QLNhanSu.csproj.Gene
 C:\Users\Van Ha Lite\OneDrive\Máy tính\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
 C:\Users\Van Ha Lite\OneDrive\Máy tính\QLNhanSu\obj\Debug\QLNhanSu.exe
 C:\Users\Van Ha Lite\OneDrive\Máy tính\QLNhanSu\obj\Debug\QLNhanSu.pdb
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\bin\Debug\QLNhanSu.exe.config
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\bin\Debug\QLNhanSu.exe
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\bin\Debug\QLNhanSu.pdb
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.csprojAssemblyReference.cache
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.DangKy.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.DangNhap.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.Helper.Helper.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.Helper.HelpPictureBox.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.ManHinhChinh.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.Properties.Resources.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.QuanLyNhanVien.resources
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.csproj.GenerateResource.cache
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.csproj.CoreCompileInputs.cache
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.exe
+D:\Tai Lieu Hoc\ThucTapNhom\QLNhanSuDone\QLNhanSu\obj\Debug\QLNhanSu.pdb
